@@ -16,6 +16,11 @@ const menus = [
         label: 'Liên hệ',
         to: '/contact',
         exact: false
+    },
+    {
+        label: 'Sản phẩm',
+        to: '/products',
+        exact: false
     }
 
 ]
@@ -42,16 +47,12 @@ export default class Navbar extends Component {
                 <div className="collapse navbar-collapse" id="collapsibleNavId">
                     <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
                         {this.showMenu(menus)}
-                        {/* <MenuLink label='Trang chủ' to="/" activeOnlyWhenExact={true} />
-                        <MenuLink label='Giới thiệu' to="/about" activeOnlyWhenExact={false} />
-                        <MenuLink label='Liên hệ' to="/contact" activeOnlyWhenExact={false} /> */}
                     </ul>
                 </div>
             </nav>
         );
     }
     showMenu = (menus) => {
-        console.log(menus);
         let result = null;
         if (menus.length > 0) {
             result=  menus.map((menu, index) => {
@@ -66,7 +67,6 @@ export default class Navbar extends Component {
                 );
             });
         }
-        console.log(result);
         return result;
     }
 }

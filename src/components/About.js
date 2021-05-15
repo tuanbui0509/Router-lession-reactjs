@@ -3,9 +3,9 @@ import React, { Component } from 'react'
 export default class About extends Component {
     render() {
         return (
-            <div>
-                Đây là About
-            </div>
+            <h1>
+                 Đây là About
+            </h1>
         )
     }
 }
