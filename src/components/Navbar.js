@@ -28,7 +28,6 @@ const menus = [
 const MenuLink = ({ label, to, activeOnlyWhenExact }) => {
     return (
         <Route path={to} exact={activeOnlyWhenExact} children={({ match }) => {
-            // console.log('match: ', match);
             let active = match ? 'active nav-item' : '';
             return (
                 <li className={`my-li ${active}`}>
@@ -55,7 +54,7 @@ export default class Navbar extends Component {
     showMenu = (menus) => {
         let result = null;
         if (menus.length > 0) {
-            result=  menus.map((menu, index) => {
+            result = menus.map((menu, index) => {
                 return (
                     <MenuLink
                         key={index}
