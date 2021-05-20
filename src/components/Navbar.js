@@ -21,6 +21,11 @@ const menus = [
         label: 'Sản phẩm',
         to: '/products',
         exact: false
+    },
+    {
+        label: 'Đăng nhập',
+        to: '/login',
+        exact: false
     }
 
 ]

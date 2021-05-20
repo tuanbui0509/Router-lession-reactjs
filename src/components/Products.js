@@ -30,6 +30,8 @@ export default class Products extends Component {
         let { match } = this.props;
         let url = match.url;
         let product = products.map((item, index) => {
+            let { location } = this.props;
+            console.log(location)
             return (
                 <div className="col-lg-4 col-md-6 col-sm-12 mb2" key={index}>
 
